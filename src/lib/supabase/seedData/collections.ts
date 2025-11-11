@@ -1,5 +1,6 @@
 import db from "../db";
 import * as schema from "../schema";
+import { sql } from "drizzle-orm";
 
 const collections = [
   {
@@ -40,12 +41,20 @@ const collections = [
 
 const seedCollections = async () => {
   try {
-    await db.delete(schema.collections);
-
     const insertedCollections = await db
       .insert(schema.collections)
       .values(collections)
-      .onConflictDoNothing()
+      .onConflictDoUpdate({
+        target: schema.collections.id,
+        set: {
+          label: sql.raw(`excluded.label`),
+          slug: sql.raw(`excluded.slug`),
+          title: sql.raw(`excluded.title`),
+          description: sql.raw(`excluded.description`),
+          featuredImageId: sql.raw(`excluded.featured_image_id`),
+          order: sql.raw(`excluded.order`),
+        },
+      })
       .returning();
     if (insertedCollections != null)
       console.log(`collections are added to the DB.`);

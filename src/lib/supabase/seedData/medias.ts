@@ -1,5 +1,6 @@
 import db from "../db";
 import * as schema from "../schema";
+import { sql } from "drizzle-orm";
 
 const medias = [
   {
@@ -29,6 +30,13 @@ const seedMedias = async () => {
     const insertedMedia = await db
       .insert(schema.medias)
       .values(medias)
+      .onConflictDoUpdate({
+        target: schema.medias.id,
+        set: {
+          key: sql.raw(`excluded.key`),
+          alt: sql.raw(`excluded.alt`),
+        },
+      })
       .returning();
     console.log(`Medias are added to the DB.`, insertedMedia);
   } catch (err) {

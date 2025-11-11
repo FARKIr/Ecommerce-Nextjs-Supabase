@@ -1,30 +1,77 @@
-# Supabase
-NEXT_PUBLIC_SUPABASE_PROJECT_REF=
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-DATABASE_SERVICE_ROLE=
-
-# Database
-DATABASE_URL=
-
-# AWS S3
-NEXT_PUBLIC_S3_BUCKET=
-NEXT_PUBLIC_S3_REGION=
-S3_ACCESS_KEY_ID=
-S3_SECRET_ACCESS_KEY=
-
-# STRIPE
-NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
-STRIPE_SECRET_KEY=
-STRIPE_WEBHOOK_SECERT_KEY=
-
-# Auth (GITHUB)
-NEXT_PUBLIC_REACT_APP_GITHUB_AUTH_TOKEN=
-
-# Deployment
-NEXT_PUBLIC_SITE_URL=
+https://vercel.com/api/marketplace/sso?integrationConfigurationId=icfg_PW4QG6aSAGP4VKrANRwcY0AR&product_id=iap_zhE90cEUeefrTQf8&resource_id=lgukiutzrkuvfvdfcmvm&teamId=team_7T4xHLbS1zKKCSNlNjHZyIL7
 
 
+
+https://supabase.com/dashboard/project/lgukiutzrkuvfvdfcmvm#
+
+
+
+Skip to content
+
+hyori github's projects
+
+hyori github's projects
+Hobby
+
+Get started with Supabase
+Support
+Documentation
+EULA
+Privacy Policy
+Website
+
+Installing into
+
+hyori github's projects
+Create Database
+Set up your new Supabase Database, powered by
+
+Supabase
+Primary Region (required)
+
+Primary region where your database will be hosted
+Public Environment Variables Prefix
+
+Prefix appended to environment variables that are available on the client side. eg. `NEXT_PUBLIC_` or `VITE_PUBLIC_`. Defaults to `NEXT_PUBLIC_`.
+
+Installation Plans
+
+Supabase Pro Plan
+
+Dedicated CPU • 1 GB RAM • 100K MAU • 8 GB database space • 250 GB bandwidth • 100 GB file storage
+
+Supabase Team Plan
+
+SOC2 • SSO for Supabase Dashboard • Priority email support & SLAs • 28-day log retention
+
+Supabase Free Plan
+
+Unlimited API requests • Shared CPU • 500 MB RAM • 50K MAU • 500 MB database space • 5 GB bandwidth • 1 GB file storage
+Home
+Docs
+Guides
+Academy
+Help
+Contact
+
+All systems normal.
+Select a display theme:
+system
+light
+dark
+Supabase - Checkout
+
+Installing into
+
+hyori github's projects
+Create Database
+Set up your new Supabase Database, powered by
+
+Supabase
+
+Database Created Successfully
+
+The hyori has been created successfully
 
 POSTGRES_URL="postgres://postgres.lgukiutzrkuvfvdfcmvm:R4E6YOT9C1zuYgOO@aws-1-eu-central-1.pooler.supabase.com:6543/postgres?sslmode=require&supa=base-pooler.x"
 POSTGRES_USER="postgres"
