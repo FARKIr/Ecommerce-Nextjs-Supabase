@@ -13,7 +13,7 @@ import {
   BuyNowButton,
   ProductCard,
   ProductImageShowcase,
-} from "@/features/products";
+} from "@/features/produkty";
 import { AddToWishListButton } from "@/features/wishlists";
 import { gql } from "@/gql";
 import { getClient } from "@/lib/urql";

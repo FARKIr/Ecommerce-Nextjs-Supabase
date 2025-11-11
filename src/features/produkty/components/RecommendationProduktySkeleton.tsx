@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "@/components/layouts/Header";
-import { ProductCardSkeleton } from "./ProductCardSkeleton";
+import { ProductCardSkeleton } from "./ProduktCardSkeleton";
 
 function RecommendationProductsSkeleton() {
   return (

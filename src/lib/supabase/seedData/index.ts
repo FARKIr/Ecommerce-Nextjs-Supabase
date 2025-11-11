@@ -1,6 +1,6 @@
 import collections from "./collections";
 import medias from "./medias";
-import products from "./products";
+import products from "./produkty";
 import shopOrders from "./shopOrders";
 import orderLines from "./orderLines";
 import address from "./address";

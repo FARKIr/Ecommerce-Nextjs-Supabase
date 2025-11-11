@@ -2,7 +2,7 @@ import { Shell } from "@/components/layouts/Shell";
 import {
   RecommendationProducts,
   RecommendationProductsSkeleton,
-} from "@/features/products";
+} from "@/features/produkty";
 import Link from "next/link";
 import React, { Suspense } from "react";
 

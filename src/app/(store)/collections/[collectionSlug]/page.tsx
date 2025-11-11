@@ -1,8 +1,8 @@
 import SectionHeading from "@/components/layouts/SectionHeading";
 import { Shell } from "@/components/layouts/Shell";
 import { Skeleton } from "@/components/ui/skeleton";
-import { CollectionBanner } from "@/features/collections";
-import { SearchProductsGridSkeleton } from "@/features/products";
+import { CollectionBanner } from "@/features/kolekcie";
+import { SearchProductsGridSkeleton } from "@/features/produkty";
 import {
   FilterSelections,
   SearchProductsInifiteScroll,

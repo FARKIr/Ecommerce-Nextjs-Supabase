@@ -3,7 +3,7 @@ import { gql } from "@/gql";
 import { getClient } from "@/lib/urql";
 
 import { notFound } from "next/navigation";
-import { CollectionForm } from "@/features/collections";
+import { CollectionForm } from "@/features/kolekcie";
 
 type EditCollectionPageProps = {
   params: {

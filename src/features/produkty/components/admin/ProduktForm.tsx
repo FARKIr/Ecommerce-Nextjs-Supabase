@@ -1,6 +1,6 @@
 "use client";
 
-import { createProductAction, updateProductAction } from "@/_actions/products";
+import { createProductAction, updateProductAction } from "@/_actions/produkty";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Form,

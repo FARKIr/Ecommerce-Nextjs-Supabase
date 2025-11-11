@@ -3,8 +3,8 @@ import { gql } from "@/gql";
 import { useQuery } from "@urql/next";
 import React from "react";
 import Header from "@/components/layouts/Header";
-import { ProductCard } from "@/features/products";
-import ProductCardSkeleton from "./RecommendationProductsSkeleton";
+import { ProductCard } from "@/features/produkty";
+import ProductCardSkeleton from "./RecommendationProduktySkeleton";
 
 export type RecommendationProductsProps =
   React.HTMLAttributes<HTMLDivElement> & {};

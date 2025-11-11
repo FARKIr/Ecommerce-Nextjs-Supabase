@@ -5,7 +5,7 @@ import {
   AdminUserNav,
 } from "@/features/users";
 import AdminShell from "@/components/admin/AdminShell";
-import { ProductsDataTable } from "@/features/products";
+import { ProductsDataTable } from "@/features/produkty";
 import ErrorToaster from "@/components/layouts/ErrorToaster";
 // TODO: CREATE New Data Table for golbaluse
 

@@ -5,7 +5,7 @@ import { getClient } from "@/lib/urql";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { CollectionsColumns } from "@/features/collections";
+import { CollectionsColumns } from "@/features/kolekcie";
 import { DataTable } from "@/features/cms";
 
 type AdminCollectionsPageProps = {
