@@ -13,6 +13,12 @@ import { z } from "zod";
 export async function POST(request: NextRequest) {
   // const session = await getServerSession(authOptions)
   //   if (!session) return NextResponse.json({}, { status: 401 })
+  
+  // Check if S3 is configured
+  if (!env.NEXT_PUBLIC_S3_BUCKET || !env.NEXT_PUBLIC_S3_REGION || !env.S3_ACCESS_KEY_ID || !env.S3_SECRET_ACCESS_KEY) {
+    return NextResponse.json({ message: "S3 is not configured. Please set S3 environment variables." }, { status: 503 });
+  }
+  
   const formData = await request.formData();
   const data = Object.fromEntries(formData) as z.infer<typeof mediaSchema>;
   const validation = mediaSchema.safeParse(data);
