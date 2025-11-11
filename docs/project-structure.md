@@ -1,75 +1,75 @@
-# 🗄️ Project Structure
+# 🗄️ Projektová štruktúra
 
 <!-- Thanks for https://github.com/alan2207/bulletproof-react -->
 
-Most of the code lives in the `src` folder and looks like this:
+Väčšina kódu žije v priečinku `src` a vyzerá takto:
 
 ```sh
 src
 |
-+-- assets            # assets folder can contain all the static files such as images, fonts, etc.
++-- assets            # priečinok assets môže obsahovať všetky statické súbory ako obrázky, písma atď.
 |
-+-- components        # shared components used across the entire application
++-- components        # zdieľané komponenty používané v celej aplikácii
 |
-+-- config            # all the global configuration, env variables etc. get exported from here and used in the app
++-- config            # všetka globálna konfigurácia, env premenné atď. sa exportujú odtiaľto a používajú v aplikácii
 |
-+-- features          # feature based modules
++-- features          # moduly založené na funkciách
 |
-+-- hooks             # shared hooks used across the entire application
++-- hooks             # zdieľané háky používané v celej aplikácii
 |
-+-- lib               # re-exporting different libraries preconfigured for the application
++-- lib               # re-exportovanie rôznych knižníc predkonfigurovaných pre aplikáciu
 |
-+-- providers         # all of the application providers
++-- providers         # všetci poskytovatelia aplikácie
 |
-+-- routes            # routes configuration
++-- routes            # konfigurácia trás
 |
-+-- stores            # global state stores
++-- stores            # globálne obchody stavu
 |
-+-- test              # test utilities and mock server
++-- test              # testovacie nástroje a mock server
 |
-+-- types             # base types used across the application
++-- types             # základné typy používané v aplikácii
 |
-+-- utils             # shared utility functions
++-- utils             # zdieľané pomocné funkcie
 ```
 
-In order to scale the application in the easiest and most maintainable way, keep most of the code inside the `features` folder, which should contain different feature-based things. Every `feature` folder should contain domain specific code for a given feature. This will allow you to keep functionalities scoped to a feature and not mix its declarations with shared things. This is much easier to maintain than a flat folder structure with many files.
+Aby sme škálovali aplikáciu najľahšie a najudržiavateľnejšie, udržujte väčšinu kódu v priečinku `features`, ktorý by mal obsahovať rôzne veci založené na funkciách. Každý priečinok `feature` by mal obsahovať doménovo špecifický kód pre danú funkciu. To vám umožní udržiavať funkcionality ohraničené na funkciu a nemiešať ich deklarácie so zdieľanými vecami. Toto je oveľa ľahšie udržiavateľné ako plochá štruktúra priečinkov s mnohými súbormi.
 
-A feature could have the following structure:
+Funkcia by mohla mať nasledujúcu štruktúru:
 
 ```sh
 src/features/awesome-feature
 |
-+-- api         # exported API request declarations and api hooks related to a specific feature
++-- api         # exportované deklarácie požiadaviek API a háky API súvisiace s konkrétnou funkciou
 |
-+-- assets      # assets folder can contain all the static files for a specific feature
++-- assets      # priečinok assets môže obsahovať všetky statické súbory pre konkrétnu funkciu
 |
-+-- components  # components scoped to a specific feature
-|   +-- index.ts # export components
++-- components  # komponenty ohraničené na konkrétnu funkciu
+|   +-- index.ts # export komponentov
 |
-+-- hooks       # hooks scoped to a specific feature
++-- hooks       # háky ohraničené na konkrétnu funkciu
 |
-+-- routes      # route components for a specific feature pages
++-- routes      # komponenty trás pre stránky konkrétnej funkcie
 |
-+-- stores      # state stores for a specific feature
++-- stores      # obchody stavu pre konkrétnu funkciu
 |
-+-- types       # typescript types for TS specific feature domain
++-- types       # typy typescript pre doménu konkrétnej funkcie TS
 |
-+-- utils       # utility functions for a specific feature
++-- utils       # pomocné funkcie pre konkrétnu funkciu
 |
-+-- index.ts    # entry point for the feature, it should serve as the public API of the given feature and exports everything that should be used outside the feature
++-- index.ts    # vstupný bod pre funkciu, mal by slúžiť ako verejné API danej funkcie a exportovať všetko, čo sa má používať mimo funkcie
 ```
 
-Everything from a feature should be exported from the `index.ts` file which behaves as the public API of the feature.
+Všetko z funkcie by sa malo exportovať zo súboru `index.ts`, ktorý sa správa ako verejné API funkcie.
 
-You should import stuff from other features only by using:
+Mali by ste importovať veci z iných funkcií len pomocou:
 
 `import {AwesomeComponent} from "@/features/awesome-feature"`
 
-and not
+a nie
 
 `import {AwesomeComponent} from "@/features/awesome-feature/components/AwesomeComponent`
 
-This can also be configured in the ESLint configuration to disallow the later import by the following rule:
+Toto sa dá nakonfigurovať v konfigurácii ESLint na zakázanie neskoršieho importu nasledujúcim pravidlom:
 
 ```js
 {
@@ -85,4 +85,4 @@ This can also be configured in the ESLint configuration to disallow the later im
 }
 ```
 
-This was inspired by how [NX](https://nx.dev/) handles libraries that are isolated but available to be used by the other modules. Think of a feature as a library or a module that is self-contained but can expose different parts to other features via its entry point.
+Toto bolo inšpirované tým, ako [NX](https://nx.dev/) spravuje knižnice, ktoré sú izolované, ale dostupné na použitie inými modulmi. Myslite na funkciu ako na knižnicu alebo modul, ktorý je sebestačný, ale môže exponovať rôzne časti iným funkciám prostredníctvom svojho vstupného bodu.

@@ -1,92 +1,92 @@
 ![og-image](https://hiyori-backpack.s3.us-west-2.amazonaws.com/Hiyori-nextjs-supabase-graphql-og.jpg)
 
-> We are Keep developing the project.
+> Stále vyvíjame projekt.
 
-# Hiyori - E-commerce with Custom CMS
+# Hiyori - E-commerce s vlastným CMS
 
-[Hiyori](https://hiyori.hugo-coding.com) is a cutting-edge e-commerce platform equipped with a custom Content Management System (CMS), designed to provide an exceptional online shopping experience. Built using the latest web technologies such as Next.js 14, GraphQL, Supabase, Drizzle, ShadcnUI, and TailwindCSS, Hiyori offers seamless, fast, and responsive interactions across all devices.
+[Hiyori](https://hiyori.hugo-coding.com) je moderná e-commerce platforma vybavená vlastným systémom správy obsahu (CMS), navrhnutá na poskytovanie výnimočného online nakupovacieho zážitku. Postavená pomocou najnovších webových technológií ako Next.js 14, GraphQL, Supabase, Drizzle, ShadcnUI a TailwindCSS, Hiyori ponúka plynulé, rýchle a responzívne interakcie na všetkých zariadeniach.
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/clong)
 
-## Features
+## Funkcie
 
-- **Searching Feature with GraphQL**: Dynamic and efficient searching, allowing complex queries with optimized data fetching.
-- **Stripe Checkout with Webhooks**: Seamless payment processing integrated with real-time notifications for automated order and inventory management.
-- **Custom CMS**: Easy management for orders, users, products, and collections through a user-friendly interface designed for e-commerce.
-- **Next.js 14 AppDir Support**: Utilizes the latest Next.js features for improved routing, page organization, and performance.
-- **Authentication**: Secure login options using credentials or OAuth with Google, ensuring flexibility and security.
-- **Guest and User Cart Sync**: Synchronizes carts between guest and logged-in states, improving shopping experience and purchase flow.
-- **Custom Media Uploader to S3 Bucket**: Efficient media management with direct upload to Amazon S3, optimizing content delivery.
-- **Database Creation with Drizzle ORM**: Simplified database management with object-relational mapping, enhancing data integrity and developer efficiency.
-- **Supabase Row Security**: Implements row-level security for fine-grained access control, protecting sensitive data.
-- **Zod Validation for Form & Route Data**: Ensures data integrity with powerful validation for form inputs and route parameters.
-- **Middleware for Admin Page and Route Protection**: Secures sensitive areas with custom middleware, restricting access to authorized users.
-- **Responsive Design**: Ensures an optimal viewing experience across all devices, from desktops to smartphones.
-- **SEO**: Implements best practices for search engine optimization to improve visibility and drive organic traffic.
+- **Funkcia vyhľadávania s GraphQL**: Dynamické a efektívne vyhľadávanie, umožňujúce komplexné otázky s optimalizovaným načítaním dát.
+- **Stripe Checkout s Webhookmi**: Plynulé spracovanie platieb integrované s real-time notifikáciami pre automatizovanú správu objednávok a inventára.
+- **Vlastný CMS**: Ľahká správa objednávok, používateľov, produktov a kolekcií prostredníctvom užívateľsky prívetivého rozhrania navrhnutého pre e-commerce.
+- **Podpora Next.js 14 AppDir**: Využíva najnovšie funkcie Next.js pre vylepšené smerovanie, organizáciu stránok a výkon.
+- **Autentifikácia**: Bezpečná prihlasovacia možnosť pomocou prihlasovacích údajov alebo OAuth s Google, zabezpečujúca flexibilitu a bezpečnosť.
+- **Synchronizácia košíka pre hostí a používateľov**: Synchronizuje košíky medzi stavmi hostí a prihlásených používateľov, zlepšujúc nakupovací zážitok a tok nákupu.
+- **Vlastný uploader médií do S3 Bucket**: Efektívna správa médií s priamym nahrávaním do Amazon S3, optimalizujúc doručovanie obsahu.
+- **Vytvorenie databázy s Drizzle ORM**: Zjednodušená správa databázy s objektovo-relačným mapovaním, zlepšujúca integritu dát a efektívnosť vývojárov.
+- **Supabase Row Security**: Implementuje bezpečnosť na úrovni riadkov pre jemnozrnnú kontrolu prístupu, chránia citlivé údaje.
+- **Zod validácia pre formuláre a údaje trás**: Zabezpečuje integritu dát s výkonnou validáciou pre vstupy formulárov a parametre trás.
+- **Middleware pre ochranu admin stránok a trás**: Zabezpečuje citlivé oblasti s vlastným middleware, obmedzujúc prístup na autorizovaných používateľov.
+- **Responzívny dizajn**: Zabezpečuje optimálny zážitok z prezerania na všetkých zariadeniach, od desktopov po smartfóny.
+- **SEO**: Implementuje najlepšie praktiky pre optimalizáciu pre vyhľadávače na zlepšenie viditeľnosti a zvýšenie organickej návštevnosti.
 
-## Upcoming Feature
+## Nadchádzajúca funkcia
 
-- Admin dashboard with realtime data
-- Ordering status
-- Products Stocking
-- Products Variants
+- Admin dashboard s realtime dátami
+- Stav objednávania
+- Skladovanie produktov
+- Varianty produktov
 
 
 
-## Technologies
+## Technológie
 
-- **Next.js 14:** A React framework for building user interfaces with server-side rendering and static site generation capabilities.
-- **GraphQL:** A query language for your API, allowing for fetching precise data requests.
-- **Supabase:** An open-source Firebase alternative providing databases, authentication, and real-time subscriptions.
-- **Drizzle:** A library to manage application state with Redux store in a simpler and predictable way.
-- **ShadcnUI:** A modern UI library for React, enabling the creation of beautiful, responsive designs.
-- **TailwindCSS:** A utility-first CSS framework for rapidly building custom designs.
+- **Next.js 14:** React framework na budovanie používateľských rozhraní so server-side renderingom a statickým generovaním stránok.
+- **GraphQL:** Jazyk otázok pre vaše API, umožňujúci načítanie presných žiadostí o dáta.
+- **Supabase:** Open-source alternatíva Firebase poskytujúca databázy, autentifikáciu a real-time odbery.
+- **Drizzle:** Knižnica na správu stavu aplikácie s Redux store jednoduchšie a predvídateľnejšie.
+- **ShadcnUI:** Moderná UI knižnica pre React, umožňujúca vytváranie krásnych, responzívnych dizajnov.
+- **TailwindCSS:** Utility-first CSS framework na rýchle budovanie vlastných dizajnov.
 
-## Getting Started
+## Začíname
 
-To get a local copy up and running, follow these simple steps:
+Na získanie lokálnej kópie a spustenie, postupujte podľa týchto jednoduchých krokov:
 
-### Prerequisites
+### Predpoklady
 
 - Node.js (v12.x or later)
 - npm or yarn
 
-### Installation
+### Inštalácia
 
-1. Clone the repository:
+1. Naklonujte repozitár:
 
    ```bash
    git clone https://github.com/yourusername/hiyori.git
    ```
 
-2. Navigate to the project directory:
+2. Prejdite do adresára projektu:
 
    ```bash
    cd hiyori
    ```
 
-3. Install dependencies:
+3. Nainštalujte závislosti:
 
    ```bash
    npm install
    ```
 
-4. Start the development server:
+4. Spustite vývojový server:
    ```bash
    npm run dev
    ```
 
-Open http://localhost:3000 with your browser to see the result.
+Otvorte http://localhost:3000 vo vašom prehliadači a pozrite si výsledok.
 
-## Contributing
+## Prispievanie
 
-We welcome contributions to Hiyori! Please read our Contributing Guide for details on our code of conduct and the process for submitting pull requests to us.
+Vitáme príspevky do Hiyori! Prečítajte si náš Príručku prispievania pre podrobnosti o našom kódexe správania a procese odosielania pull requestov.
 
-## License
+## Licencia
 
-Hiyori is licensed under the MIT License. See the license file for more information.
+Hiyori je licencovaný pod MIT licenciou. Pozrite si licenčný súbor pre viac informácií.
 
-## Acknowledgments
+## Poďakovania
 
-- Special thanks to all libraries and frameworks that made Hiyori possible.
-- Shoutout to the community for supporting and using Hiyori.
+- Špeciálne poďakovanie všetkým knižniciam a frameworkom, ktoré umožnili Hiyori.
+- Pokrik komunite za podporu a používanie Hiyori.
